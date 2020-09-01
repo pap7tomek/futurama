@@ -1,0 +1,42 @@
+.item {
+    margin-top: 3px;
+    display: flex;
+    border: solid blueviolet 1px;
+    width: 70%;
+    cursor: pointer;
+}
+.imageContainer {
+    width: 30%;
+    text-align: center;
+}
+.image {
+    height: 150px;
+    padding: 40px;
+}
+.text {
+    width: 70%;
+    padding-top: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 575.98px) { 
+    .item {
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+    }
+    .image {
+        padding: 20px 0;
+    }
+    .imageContainer {
+        width: auto;
+        padding-top:20px;
+    }
+    .text {
+        padding-right: 0;
+    }
+    .text p {
+        margin-top: 5px;
+    }
+}
