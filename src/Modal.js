@@ -14,7 +14,7 @@ const Modal = ({ setModalStatus, modalStatus, modalData }) => {
             {modalStatus && <div className={showHideClassName}>
                 <section className="modal-main">
                     <img src={modalData[0].image}></img>
-                    {getQuotes().map(value => <p>{value.quote}</p>)}
+                    {getQuotes().map(value => <p key={value.quote}>{value.quote}</p>)}
                 <button onClick={()=>{setModalStatus(false)}}>Close</button>
                 </section>
             </div>}
